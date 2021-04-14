@@ -9,8 +9,15 @@
 export default {
   data() {
     return {
-      year: ""
+      year: "",
     };
+  },
+  
+  computed: {
+    // アノテーションが必要です
+    year(): string {
+      return this.year() + '!'
+    }
   },
   
   methods: {
