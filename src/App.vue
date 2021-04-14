@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     調べたい年：<input type="text" v-model="year"><br>
-
+<button v-on:click="leapYear">調べたい年</button>
   </div>
 </template>
 
@@ -9,17 +9,24 @@
 export default {
   data() {
     return {
-      year: 0,
-      
+      year: "";
     };
+  },
+  computed: {
+    double() {
+      return this.number * 2;
+    },
+    numberClass() {
+      if (this.number > 50) {
+        return "red";
+      }
+
+      return "blue";
+    }
   },
   methods: {
     leapYear(year) {
-      if( (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-        console.log("うるう年")
-      } else{
-        console.log("うるう年ではありません")
-}
+      if((this.year % 4 == 0 && this.year % 100 !== 0) || this.year % 400 == 0)
     }
   }
 };
