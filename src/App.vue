@@ -9,26 +9,19 @@
 export default {
   data() {
     return {
-      year: "";
+      year: ""
     };
   },
-  computed: {
-    double() {
-      return this.number * 2;
-    },
-    numberClass() {
-      if (this.number > 50) {
-        return "red";
-      }
-
-      return "blue";
-    }
-  },
+  
   methods: {
-    leapYear(year) {
-      if((this.year % 4 == 0 && this.year % 100 !== 0) || this.year % 400 == 0)
+    leapYear(this.year) {
+      if((this.year % 4 == 0 && this.year % 100 !== 0) || this.year % 400 == 0))｛
+          return console.log( "うるう年です");
     }
+  
+   
   }
+}
 };
     
 
