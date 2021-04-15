@@ -6,31 +6,23 @@
 </template>
 
 <script>
-import Vue, { VNode } from 'vue'
 export default {
   data() {
     return {
       year: "",
     };
   },
-  
-  computed: {
-    // アノテーションが必要です
-    year(): string {
-      return this.year() + '!'
-    }
-  },
-  
-  methods: {
-    leapYear() {
-      if((year % 4 == 0 && year % 100 !== 0) || year % 400 == 0)｛
-          return console.log("うるう年です");
-    }
-  
    
+  methods: {
+    leapYear(){
+      if((this.year % 4 == 0 && this.year % 100 !== 0) || this.year % 400 == 0);
+          return console.log("閏年です");
+    }
+  
   }
+ }
 
-};
+
     
 
 </script>
