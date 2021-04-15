@@ -17,6 +17,9 @@ export default {
     leapYear(){
       if((this.year % 4 == 0 && this.year % 100 !== 0) || this.year % 400 == 0);
           return console.log("閏年です");
+    　else;
+          return console.log("閏年ではありません")
+
     }
   
   }
