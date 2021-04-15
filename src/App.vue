@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import Vue, { VNode } from 'vue'
 export default {
   data() {
     return {
@@ -21,14 +22,14 @@ export default {
   },
   
   methods: {
-    leapYear(this.year) {
-      if((this.year % 4 == 0 && this.year % 100 !== 0) || this.year % 400 == 0))｛
-          return console.log( "うるう年です");
+    leapYear() {
+      if((year % 4 == 0 && year % 100 !== 0) || year % 400 == 0)｛
+          return console.log("うるう年です");
     }
   
    
   }
-}
+
 };
     
 
